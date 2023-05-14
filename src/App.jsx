@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import FormSearch from "./components/FormSearch";
 import { CategoryProvider } from "./context/CategoryProvider";
 import { BeveragesProvider } from "./context/BeveragesProvider";
-
+import ListBeverage from "./components/ListBeverage";
 
 function App() {
     return (
@@ -12,7 +12,8 @@ function App() {
                     <h1>Cocktail Finder</h1>
                 </header>
                 <Container className="mt-5"> 
-                    <FormSearch></FormSearch>
+                    <FormSearch />
+                    <ListBeverage />
                 </Container>
             </BeveragesProvider>
         </CategoryProvider>
