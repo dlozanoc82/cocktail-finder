@@ -3,6 +3,8 @@ import FormSearch from "./components/FormSearch";
 import { CategoryProvider } from "./context/CategoryProvider";
 import { BeveragesProvider } from "./context/BeveragesProvider";
 import ListBeverage from "./components/ListBeverage";
+import ModalBeverage from "./components/ModalBeverage";
+
 
 function App() {
     return (
@@ -14,6 +16,7 @@ function App() {
                 <Container className="mt-5"> 
                     <FormSearch />
                     <ListBeverage />
+                    <ModalBeverage />
                 </Container>
             </BeveragesProvider>
         </CategoryProvider>
